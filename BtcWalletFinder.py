@@ -1,5 +1,4 @@
 from colorama import Fore
-from pystyle import Center
 import os
 import random
 import requests
@@ -52,7 +51,7 @@ while True:
         y = prefin[0:2] + "," + prefin[2:7]
         print(Fore.RED + "                                              [" + Fore.GREEN + "!" + Fore.RED + "] " + "Private key " + Fore.YELLOW +
               pvkeybt + Fore.GREEN + " Balance " + Fore.YELLOW + y + ' BTC')
-        choice = input(Center.XCenter('Save & continue [y/n] >'))
+        choice = input('Save & continue [y/n] >')
 
         if choice == 'y':
             keybdhit = open("hit.txt", "a+")
