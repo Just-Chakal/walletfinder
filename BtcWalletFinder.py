@@ -43,13 +43,13 @@ while True:
     sltcv = json.loads(balance)
 
     if 'message' in sltcv:
-        print(Fore.RED + "                                              [" + Fore.GREEN + "!" + Fore.RED + "] " + "Private key " + Fore.MAGENTA +
+        print(Fore.RED + "[" + Fore.GREEN + "!" + Fore.RED + "] " + "Private key " + Fore.MAGENTA +
                     pvkeybt + Fore.GREEN + " Balance " + Fore.YELLOW + '0.00000 BTC')
         
     elif sltcv[pvkeybt]['final_balance'] > 0.00001:
         prefin = str(sltcv[pvkeybt]['final_balance'])
         y = prefin[0:2] + "," + prefin[2:7]
-        print(Fore.RED + "                                              [" + Fore.GREEN + "!" + Fore.RED + "] " + "Private key " + Fore.YELLOW +
+        print(Fore.RED + "[" + Fore.GREEN + "!" + Fore.RED + "] " + "Private key " + Fore.YELLOW +
               pvkeybt + Fore.GREEN + " Balance " + Fore.YELLOW + y + ' BTC')
         choice = input('Save & continue [y/n] >')
 
